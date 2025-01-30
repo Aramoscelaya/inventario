@@ -26,7 +26,7 @@
             .then(stream => {
                 video.srcObject = stream;
 
-                //while (true) {
+                /*while (true) {
                     const context = canvas.getContext('2d');
                     context.drawImage(video, 0, 0, canvas.width, canvas.height);
                     const imageData = canvas.toDataURL('image/png'); // Obtener la imagen en base64
@@ -53,7 +53,7 @@
                         console.error("Error al enviar la imagen:", err);
                         result.textContent = "Error al procesar la imagen.";
                     });
-                //}
+                }*/
             })
             .catch(err => {
                 console.error("Error al acceder a la cámara:", err);
