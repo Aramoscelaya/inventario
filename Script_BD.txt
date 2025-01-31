@@ -1,0 +1,10 @@
+CREATE TABLE `inventario`.`areas` (
+  `id_area` INT NOT NULL AUTO_INCREMENT,
+  `nombre_area` VARCHAR(45) NOT NULL,
+  `estatus` TINYINT(1) NOT NULL,
+  `fecha_creacion` TIMESTAMP NOT NULL,
+  `fecha_modificacion` TIMESTAMP NOT NULL,
+  `usuario_modificacion` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id_area`))
+COMMENT = 'Tabla para identificar las campañas (areas) que contienen equipos de computo';
+
