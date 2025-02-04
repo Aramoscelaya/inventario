@@ -87,5 +87,3 @@ marca-Lenovo,
 hostname-WPHI002
 https://es.qr-code-generator.com
 */
-
-
