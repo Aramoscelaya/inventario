@@ -6,9 +6,16 @@ from pyzbar.pyzbar import decode
 from PIL import Image
 from io import BytesIO
 import base64
+from django.db import connection
 
 
 def capImgBarCode(request):
+    with connection.cursor() as cursor:
+        table_names = connection.introspection.table_names()
+
+    print(table_names)
+
+
     if request.method == 'POST':
         # Obtener la imagen en base64 desde la solicitud POST
         image_data = request.POST.get('image')
